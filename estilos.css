@@ -12,15 +12,22 @@ body {
 }
 
 header {
-    background-color: #4e342e;
+    background: linear-gradient(135deg, #3e2723, #795548);
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 70px 20px;
+    border-bottom: 5px solid #d7a86e;
 }
 
 header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.9;
 }
 
 nav {
@@ -62,23 +69,32 @@ h2 {
 .producto {
     background: white;
     width: 300px;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #8d6e63;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 25px rgba(62, 39, 35, 0.25);
 }
 
 .producto h3 {
-    margin-bottom: 10px;
+    color: #5d4037;
+    margin-bottom: 12px;
+    font-size: 22px;
 }
 
 .producto strong {
-    display: block;
-    margin-top: 15px;
-    font-size: 20px;
-}
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 21px;
+    color: #795548;
 
-#horarios,
+}#horarios,
 #contacto {
     background: white;
     padding: 30px;
@@ -101,20 +117,29 @@ footer {
 }
 
 .promocion {
-    background-color: #fff8e1;
-    border: 2px solid #8d6e63;
+    background: linear-gradient(145deg, #fff8e1, #ffffff);
+    border: none;
+    border-left: 6px solid #d7a86e;
     width: 300px;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.promocion:hover {
+    transform: translateY(-8px);
 }
 
 .promocion h3 {
-    margin-bottom: 10px;
+    color: #5d4037;
+    margin-bottom: 12px;
 }
 
 .promocion strong {
-    display: block;
-    margin-top: 15px;
-    font-size: 18px;
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 19px;
+    color: #795548;
 }
